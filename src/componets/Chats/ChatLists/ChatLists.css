@@ -1,0 +1,84 @@
+.chats{
+    flex:1;
+    overflow: scroll;
+
+
+.search{
+display: flex;
+align-items: center;
+gap: 20px;
+padding: 20px;
+}
+.searchBar{
+    display: flex;
+    padding: 6px;
+    border-radius: 10px;
+    padding: 10p;
+    width: 210px;
+    flex: 1;
+    background-color: rgba(3, 3, 66, 0.434);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none; /* ← this removes the blue glow on focus */
+  color: white;
+  flex: 1;
+}
+.add{
+    width: 20px;
+    height: 20px;
+ background-color: rgba(3, 3, 66, 0.434);
+ border-radius: 10px;
+ padding: 7px;
+ cursor: pointer;
+
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgba(227, 227, 233, 0.397);
+}
+.item img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+span{
+    position: relative;
+    top: 15px;
+    font-weight: 500;
+}
+p{
+    font-size: 14px;
+    font-weight: 300;
+}
+}
+
+.chats::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+}
+
+.chats::-webkit-scrollbar-track {
+  background: transparent; /* track color */
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* scroll handle */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.chats::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
