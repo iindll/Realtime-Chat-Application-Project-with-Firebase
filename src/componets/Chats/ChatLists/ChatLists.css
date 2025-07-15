@@ -39,7 +39,7 @@ input {
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
+    padding: 15px;
     border-bottom: 1px solid rgba(227, 227, 233, 0.397);
 }
 .item img{
@@ -58,10 +58,13 @@ span{
     position: relative;
     top: 15px;
     font-weight: 500;
+    font-size: 15px;
 }
 p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
+    opacity: 0.8;
+
 }
 }
 
