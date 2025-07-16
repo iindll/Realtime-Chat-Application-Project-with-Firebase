@@ -51,7 +51,7 @@ setOpen(false)
 
       <div className="center">
         <div className="message">
-          <img src={avtar} alt="" />
+          <img src={avtar} className="avatar-img" alt="" />
           <div className="texts">
             <p>Hey! Long time no see. How have you been?</p>
             <span>1 min ago</span>
@@ -63,7 +63,7 @@ setOpen(false)
             <span>1 min ago</span>
           </div>
         </div> <div className="message">
-          <img src={avtar} alt="" />
+          <img src={avtar} alt="" className="avatar-img" />
           <div className="texts">
             <p>Absolutely. Coffee this weekend?</p>
             <span>1 min ago</span>
@@ -73,14 +73,17 @@ setOpen(false)
             <p>If you tried all this and it still doesn’t work</p>
             <span>1 min ago</span>
           </div>
-        </div> <div className="message">
-          <img src={avtar} alt="" />
-          <div className="texts">
-            <img src={carvan} alt="" />
-            <p>Perfect! I’ll text you the details 💬</p>
-            <span>1 min ago</span>
-          </div>
         </div>
+        
+         <div className="message">
+  <img src={avtar} className="avatar-img"alt="" />
+  <div className="texts">
+    <img src={carvan} className="message-img" alt="" />
+    <p>Perfect! I’ll text you the details 💬</p>
+    <span>1 min ago</span>
+  </div>
+</div>
+
       </div>
 
       <div className="bottom">
