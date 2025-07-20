@@ -1,5 +1,5 @@
 import "./AddUSer.css"
-import avatra from "../../assets/Avatar1.jpeg"
+import avatra from "../../../../assets/Avatar1.jpeg"
 const AddUSer = () => {
   return (
     <div className='AddUSer'>
@@ -10,7 +10,7 @@ const AddUSer = () => {
         <div className="user">
          <div className="detail">
             <img src={avatra} alt="" />
-            <span>Samar Mohaned</span>
+            <span className="user-name">Samar Mohaned</span>
          </div>
          <button>Add user</button>
         </div>

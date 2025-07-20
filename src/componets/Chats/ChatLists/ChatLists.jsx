@@ -4,9 +4,9 @@ import add from "../../../assets/add.svg"
 import minus from "../../../assets/minus.svg"
 import avatar2 from "../../../assets/avatar2.jpeg"
 import { useState } from "react"
-
+import AddUSer from "../ChatLists/AddUSer/AddUSer.jsx"
 const ChatLists = () => {
-  const [addMode,setAddMode]= useState(true)
+  const [addMode,setAddMode]= useState(false)
 
   return (
     <div className='chats'>
@@ -55,6 +55,9 @@ const ChatLists = () => {
       <span>Nada Elsheakh</span>
       <p>Hi miss you</p></div>
       </div>
+      {
+         addMode ? <AddUSer/> : null
+      }
     </div>
   )
 }

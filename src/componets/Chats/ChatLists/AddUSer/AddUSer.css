@@ -1,0 +1,77 @@
+.AddUSer{
+width: max-content;
+height: max-content;;    padding: 30px;
+    background-color: rgba(64, 57, 89, 0.781);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+
+    form{
+        display: flex;
+        gap :20px;
+
+        input{
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            color: rgb(50, 50, 66);
+        }
+
+        button{
+            background-color: rgb(40, 49, 101);
+            border-radius: 10px;
+            border: none
+            ;
+            color: white;
+            
+        }
+
+       
+
+        
+}
+}
+
+ .user{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+           
+        }
+.detail{
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+            
+        
+            img{
+                width: 40px;
+                height: 40px;
+            
+            }
+       
+       
+       
+       
+        }
+
+
+      .user button{
+        cursor: pointer;
+      
+                padding: 5px 10px;
+                border-radius: 10px;
+                position: relative;
+                top: 12px;
+                border: none;
+                background-color: rgb(72, 72, 221);
+                color: white;
+            }
+
+    
