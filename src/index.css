@@ -27,9 +27,8 @@ body {
   border-radius: 20px;
   border: 1px solid rgba(52, 52, 83, 0.251);;
   display: flex;
-  overflow-x: auto;
-  overflow-y: auto;
-
+ 
+  overflow:scroll; /* allows scrolling if content is too wide */
 }
 .container::-webkit-scrollbar {
   width: 6px; /* width of the scrollbar */

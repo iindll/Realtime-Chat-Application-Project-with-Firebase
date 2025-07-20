@@ -1,8 +1,10 @@
 .Details {
+  flex: 1;
   padding: 10px;
   display: flex;
   flex-direction: column;
-    z-index: 10;
+  overflow-y: auto;
+  width: 100%;
 
 
   .user-details {
@@ -88,19 +90,39 @@
 
   .downalod {
     cursor: pointer;
+
   }
 
   .Block-user {
-    width: 15vw;
+    width: 20vw;
     border-radius: 10px;
     border: none;
-    padding: 5px 10px;
+    padding: 8px 10px;
     color: white;
-    background-color: rgb(110, 110, 169);
+    font-weight: bold;
+    background-color:rgba(255, 0, 0, 0.651);
     margin: 10px;
     cursor: pointer;
   }
+  
+  
+  .Block-user:hover {
+   background-color: rgb(238, 7, 7);}
+.log-out{
+  width: 20vw;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 10px;
+    color: white;
+    font-weight: bold;
+    background-color:rgba(238, 238, 245, 0.263);
+    margin: 10px;
+    cursor: pointer;
 }
+.log-out:hover{
+            background-color: rgba(3, 3, 66, 0.434)}
+
+  }
 
 
 .photo::-webkit-scrollbar {
@@ -118,5 +140,24 @@
 }
 
 .photo::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+
+.Details::-webkit-scrollbar {
+  width: 6px; /* width of the scrollbar */
+}
+
+.Details::-webkit-scrollbar-track {
+  background: transparent; /* track color */
+}
+
+.Details::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* scroll handle */
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.Details::-webkit-scrollbar-thumb:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }

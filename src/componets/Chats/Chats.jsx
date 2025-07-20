@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./Chats.css";
 import avtar from "../../assets/Avatar1.jpeg";
 import phone from "../../assets/phone.svg";
@@ -15,7 +15,7 @@ const Chats = () => {
   const [clicked, setClicked] = useState(false);
   const[open,setOpen] =useState(false)
   const [Text,setText]=useState("")
-
+   const endRef = useRef(null)
   const handleClick = () => {
     if (!clicked) {
       setClicked(true);
@@ -24,6 +24,10 @@ const Chats = () => {
       }, 1000); 
     }
   };
+
+  useEffect(()=>{
+    endRef.current?.scrollIntoView({behavior:"smooth"})
+  })
 
   const handlEmoji = e=>{
 setText((prev)=> prev+e.emoji) 
@@ -83,7 +87,7 @@ setOpen(false)
     <span>1 min ago</span>
   </div>
 </div>
-
+<div ref={endRef}></div>
       </div>
 
       <div className="bottom">
