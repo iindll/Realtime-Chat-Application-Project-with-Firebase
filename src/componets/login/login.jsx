@@ -1,4 +1,4 @@
-import { use, useState } from "react"
+import {  useState } from "react"
 import EmptyImg from '../../assets/emptyimg.jpeg'
 import './login.css'
 import { toast } from "react-toastify"
@@ -28,7 +28,7 @@ const Login = () => {
 
         toast.warn("the username must be > 8 charecaters!")
           }else{  
-                        e.preventDefault()
+               e.preventDefault()
  toast.warn("the password & username must be > 8 charecaters!")
 
           }
